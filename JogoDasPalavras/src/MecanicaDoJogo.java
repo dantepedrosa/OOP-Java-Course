@@ -1,8 +1,7 @@
-
-public class MecanicaDoJogo {
-
-	public MecanicaDoJogo() {
-		// TODO Auto-generated constructor stub
-	}
+/**
+ * Interface que representa o andamento e a lógica do jogo. 
+ * É responsável por ditar o andamento do jogo. 
+ */
+public interface MecanicaDoJogo {
 
 }

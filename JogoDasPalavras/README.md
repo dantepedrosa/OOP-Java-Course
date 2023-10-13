@@ -5,7 +5,7 @@ O jogo deve possuir os seguintes componentes com as seguintes responsabilidades:
 - [ ] **Principal**: representa a classe com o método main(). É essa classe que é responsável por ler
 a entrada do usuário e por imprimir as informações no console. Nenhuma outra classe pode
 imprimir ou ler do console.
-- [ ] **BancoDePalavras**: classe que possui um método que retorna uma palavra retirada
+- [x] **BancoDePalavras**: classe que possui um método que retorna uma palavra retirada
 aleatóriamente de uma lista de palavras lida a partir de um arquivo.
 - [ ] **Embaralhador**: interface que representa classes reponsáveis por receber uma palavra e
 retornar ela embaralhada. Pelo menos duas implementações deverão ser feitas.
