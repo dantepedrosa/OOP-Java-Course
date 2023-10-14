@@ -7,6 +7,7 @@ public interface MecanicaDoJogo {
 	public int somaVidas(int v);		// Soma o número de vidas em v e retorna o número atual
 	public int perdeVida(int v);		// Subtrai o número de vidas em v e retorna o número atual
 	public int getVidas();				// Retorna o numero de vidas
+	public void novaChance();			// Equivalente a colocar uma moeda para tentar novamente
 	
 	public int somaPontos(int n);		// Soma o numero de pontos em n e retorna o número atual
 	public int getPontos();				// Retorna a quantidade de pontos do jogo atual
