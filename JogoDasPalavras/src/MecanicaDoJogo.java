@@ -4,18 +4,83 @@
  */
 public interface MecanicaDoJogo {
 
-	public int somaVidas(int v);		// Soma o número de vidas em v e retorna o número atual
-	public int perdeVida(int v);		// Subtrai o número de vidas em v e retorna o número atual
-	public int getVidas();				// Retorna o numero de vidas
-	public void novaChance();			// Equivalente a colocar uma moeda para tentar novamente
+	/** 
+	 * Soma o número de vidas em v e retorna o número atual
+	 * 
+	 * @param v numero de vidas a somar
+	 * @return	numero total de vidas
+	 */
+	public int somaVidas(int v);
 	
-	public int somaPontos(int n);		// Soma o numero de pontos em n e retorna o número atual
-	public int getPontos();				// Retorna a quantidade de pontos do jogo atual
+	/** 
+	 * Subtrai o número de vidas em v e retorna o número atual
+	 * 
+	 * @param v numero de vidas a perder
+	 * @return 	numero total de vidas
+	 */
+	public int perdeVida(int v);
 	
-	public void setDifuculdade(int d);	// Determina a dificuldade do jogo
-	public int getDificuldade(); 		// Retorna a dificuldade configurada para o jogo
-	public int getDificuldadePalavra(String p);	// Configura a dificuldade da palavra p
+	/** 
+	 * Retorna o numero de vidas
+	 * 
+	 * @return	numero total de vidas
+	 */
+	public int getVidas();
 	
-	public String getPalavra();					// Retorna uma palavra embaralhada
-	public boolean enviarTentativa(String p); 	// Enviar a palavra montada. Retorna true para correto.
+	/** 
+	 * Equivalente a colocar uma moeda para tentar novamente
+	 */
+	public void novaChance();
+	
+	/** 
+	 * Soma o numero de pontos em n e retorna o número atual
+	 * 
+	 * @param n	numero de pontos a somar
+	 * @return	total de pontos
+	 */
+	public int somaPontos(int n);
+	
+	/** 
+	 * Retorna a quantidade de pontos do jogo atual
+	 * 
+	 * @return total de pontos
+	 */
+	public int getPontos();
+	
+	/** 
+	 * Determina a dificuldade do jogo
+	 * 
+	 * @param d	dificuldade do jogo
+	 */
+	public void setDifuculdade(int d);
+	
+	/**
+	 * Retorna a dificuldade configurada para o jogo
+	 * 
+	 * @return dificuldade do jogo atual
+	 */
+	public int getDificuldade();
+	
+	/**
+	 * Configura a dificuldade da palavra p
+	 * 
+	 * @param p	palavra
+	 * @return 	dificuldade da palavra
+	 */
+	public int getDificuldadePalavra(String p);
+	
+	/**
+	 * Retorna uma palavra embaralhada da dificuldade d
+	 * 
+	 * @return palavra embaralhada
+	 */
+	public String getPalavra();
+	
+	/**
+	 * Enviar a palavra montada. Retorna true para correto.
+	 * 
+	 * @param p	palavra montada
+	 * @return	Retorna true se correto e false se incorreto
+	 */
+	public boolean enviarTentativa(String p);
 }
