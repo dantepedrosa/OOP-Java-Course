@@ -1,28 +1,48 @@
 
 public class MecanicaJogoMelhorDeX implements MecanicaDoJogo {
+	
+	private final int init_vidas;		// Número de vidas que o jogador começa
+	private final int numVitorias;		// Número de jogos que deve ser ganho
+	private int vidas;		// Número de vidas que o jogador ainda tem
+	private int pontos;
+	private int dificuldade;
+	private String palavra;
+	private BancoDePalavras bnc;
+	private int numAcertos;
+	
+	
+	public MecanicaJogoMelhorDeX(BancoDePalavras banco, int dificuldade, int vidas) {
 
+		this.bnc = banco;
+		this.dificuldade = dificuldade;
+		this.init_vidas = vidas;
+		this.vidas = init_vidas;
+		this.numVitorias = init_vidas + 1; // TODO Implementar função no MecanicaDoJogo getAcertos
+	}
+	
 	@Override
 	public int somaVidas(int v) {
-		// TODO Auto-generated method stub
-		return 0;
+		if(vidas > 0)
+			vidas += v;
+		return vidas;
 	}
 
 	@Override
 	public int perdeVida(int v) {
-		// TODO Auto-generated method stub
-		return 0;
+		if(vidas > 0)
+			vidas -= v;
+		return vidas;
 	}
 
 	@Override
 	public int getVidas() {
-		// TODO Auto-generated method stub
-		return 0;
+		return vidas;
 	}
 
 	@Override
 	public void novaChance() {
-		// TODO Auto-generated method stub
-
+		if(vidas == 0)
+			vidas += init_vidas;
 	}
 
 	@Override
@@ -57,7 +77,6 @@ public class MecanicaJogoMelhorDeX implements MecanicaDoJogo {
 
 	@Override
 	public String getPalavra() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
