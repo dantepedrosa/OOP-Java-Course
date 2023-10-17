@@ -18,6 +18,12 @@ public class MecanicaJogoInfinito implements MecanicaDoJogo {
 		// TODO Auto-generated method stub
 		return 0;
 	}
+	
+	@Override
+	public int getAcertos() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 
 	@Override
 	public void novaChance() {

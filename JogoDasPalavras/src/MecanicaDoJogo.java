@@ -27,6 +27,13 @@ public interface MecanicaDoJogo {
 	 */
 	public int getVidas();
 	
+	/**
+	 * Retorna o número de acertos
+	 * 
+	 * @return número total de acertos
+	 */
+	public int getAcertos();
+	
 	/** 
 	 * Equivalente a colocar uma moeda para tentar novamente
 	 */
