@@ -87,7 +87,10 @@ public interface MecanicaDoJogo {
 	 * Enviar a palavra montada. Retorna true para correto.
 	 * 
 	 * @param p	palavra montada
-	 * @return	Retorna true se correto e false se incorreto
+	 * @return	0: jogo ganho</br> 
+	 * 			1: jogo perdido</br> 
+	 * 			2: palavra certa</br>
+	 * 			3: palavra errada
 	 */
-	public boolean enviarTentativa(String p);
+	public int enviarTentativa(String p);
 }

@@ -68,9 +68,9 @@ public class MecanicaJogoInfinito implements MecanicaDoJogo {
 	}
 
 	@Override
-	public boolean enviarTentativa(String p) {
+	public int enviarTentativa(String p) {
 		// TODO Auto-generated method stub
-		return false;
+		return 0;
 	}
 
 }
